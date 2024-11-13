@@ -63,16 +63,7 @@ void mqtt_notify(const char *broker, int port, const char *topic, const char *us
 }
 
 int main() {
-    // char broker[BUFFER_SIZE] = {0};
-    // int port = 1883;
-    // char topic[BUFFER_SIZE] = {0};
-    // char user[BUFFER_SIZE] = {0};
-    // char password[BUFFER_SIZE] = {0};
 
-    // load_env(ENV_FILE, broker, &port, topic, user, password);
-    // mqtt_notify(broker, port, topic, user, password);
-
-    // return 0;
         char broker[BUFFER_SIZE] = {0};
     int port = 1883;
     char topic[BUFFER_SIZE] = {0};
