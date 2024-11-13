@@ -13,6 +13,13 @@ Requisitos
 Sistemas Operacionais Suportados
 Linux (Desenvolvido e testado no Debian 12).
 
+Libnotify-bin
+```shell
+sudo apt install libnotify-bin
+# teste;
+notify-send "Título teste" "Mensagem teste compromisso"
+
+```
 
 A biblioteca Paho MQTT C não vem instalada por padrão, então você precisará baixá-la e instalá-la. Aqui estão as etapas para fazer isso no Debian:
 
