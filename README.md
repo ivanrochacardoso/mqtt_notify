@@ -52,3 +52,22 @@ sudo ldconfig atualiza o cache das bibliotecas para que o sistema encontre a bib
 ### passo 3 compilar com gcc
 gcc mqtt_notify.c -o mqtt_notify -lpaho-mqtt3c
 
+### Prova e uso
+
+Alterar os dados do broker,  informações  de login, e tópico;
+
+
+```yaml
+MQTT_BROKER=192.168.2.100
+MQTT_PORT=1883
+MQTT_TOPIC=notify/alert
+MQTT_USER=ivan
+MQTT_PASSWORD=kdjf7n
+```
+
+Exemplo para executar como um processo
+
+```shell
+nohup /home/mqtt_notify/mqtt_notify &> /dev/null &
+```
+
